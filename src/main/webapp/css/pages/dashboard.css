@@ -1,0 +1,173 @@
+#nav > div > a:not(.mobile-hide) {
+  display: inline-block;
+}
+
+.main2{
+  box-sizing: border-box;
+  left: 0px;
+  margin-top: 96px;
+  width: 100vw;
+  min-height: calc(100vh - 192px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(50vh - 384px);
+  flex-direction: column;
+}
+
+.main {
+  box-sizing: border-box;
+  left: 0px;
+  margin-top: 96px;
+  width: 100vw;
+  min-height: calc(100vh - 192px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(50vh - 384px);
+  flex-direction: column;
+}
+
+.main > h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.grouping, .titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 352px;
+  box-sizing: border-box;
+}
+
+.titles {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.titles > p {
+  margin: 0px;
+}
+
+p.subtitle {
+  color: rgba(0,0,0,0.4);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+input[type=date] {
+  width: 168px;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+input[type=date]::placeholder {
+  color: rgba(0,0,0,0.4);
+}
+
+.results {
+  width: 352px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 16px;
+  box-sizing: border-box;
+  padding-bottom: 64px;
+}
+
+.results > .result {
+  width: 352px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  margin: 16px 0px;
+  box-sizing: border-box;
+}
+
+.result > input {
+  width: 23px;
+  margin-right: 20px;
+}
+
+.result-content > p {
+  margin: 0px;
+}
+
+.result-content > a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.results > p {
+  align-self: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.grouping > input[type=text] {
+  margin: 0px;
+}
+
+#keywords {
+  width: 244px;
+}
+
+#country {
+  width: 92px;
+  text-align: right;
+  background-image: url("../../assets/images/dummy-flag.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  text-transform: uppercase;
+}
+
+.error-msg {
+  margin-top: 16px !important;
+}
+
+footer {
+  position: relative;
+}
+
+element.style {
+    display: flex;
+}
+
+@media only screen and (max-width : 894px) {
+  input[type=text] {
+    width: 320px;
+  }
+  input[type=date] {
+    width: 152px;
+  }
+  .grouping, .titles {
+    width: 320px;
+  }
+  .results {
+    width: 320px !important;
+  }
+  .result {
+    width: 320px !important;
+  }
+  #keywords {
+    width: 212px;
+  }
+}
+
+#welcome {
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  color: darkblue;
+}

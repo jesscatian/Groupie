@@ -1,0 +1,25 @@
+#nav > div > a:not(.mobile-hide) {
+  display: inline-block;
+}
+
+.main {
+  box-sizing: border-box;
+    left: 0px;
+    margin-top: 96px;
+    width: 100vw;
+    min-height: calc(100vh - 192px);
+    display: flex;
+    align-items: center;
+    padding-top: calc(50vh - 384px);
+    flex-direction: column;
+}
+
+.main > h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.results{
+    text-align: center;
+    align-items: center;
+}

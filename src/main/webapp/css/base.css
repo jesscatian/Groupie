@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap');
+
+body {
+  background: rgb(38,38,214);
+  background: -moz-linear-gradient(180deg, rgba(38,38,214,0) 70%, rgba(38,38,214,0.23) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(38,38,214,0) 70%, rgba(38,38,214,0.23) 100%);
+  background: linear-gradient(180deg, rgba(38,38,214,0) 70%, rgba(38,38,214,0.23) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2626d6",endColorstr="#2626d6",GradientType=1);
+  margin: 0px;
+  padding: 0px;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-numeric: proportional-nums;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  width: 100vw;
+  height: 96px;
+  box-sizing: border-box;
+  background: white;
+  background-color: white;
+  padding: 0px 32px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+#nav {
+  height: 96px;
+  max-width: 1024px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#nav > div > h1 {
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+#nav > div > h1 > a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav > div > h1 > a > img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 4px;
+  box-sizing: border-box;
+}
+
+#nav > div > a {
+  font-size: 16px;
+  margin: 0px 16px;
+  cursor: pointer;
+  opacity: 1;
+  color: black;
+  text-decoration: none;
+  transition: opacity ease 0.2s;
+}
+
+#nav > div > a:hover {
+  opacity: 0.6;
+}
+
+#nav > div > a:last-child {
+  margin-right: 0px;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: #e2e8f0;
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  height: 48px;
+  font-size: 16px;
+  color: black;
+  margin: 8px;
+  width: 352px;
+  padding: 0px 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+input.invalid {
+  border: 3px solid rgba(255,0,0,0.3);
+  padding: 0px 13px;
+}
+
+input::placeholder {
+  letter-spacing: normal;
+  color: rgba(0,0,0,0.4);
+}
+
+input[type=password] {
+  letter-spacing: 4px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100vw;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 32px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+footer > p {
+  font-size: 16px;
+  color: rgba(0,0,0,0.4);
+}
+
+button {
+  background: black;
+  background-color: black;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 15px 24px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  margin: 0px 8px;
+  cursor: pointer;
+  border: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  outline: none;
+  margin-top: 24px;
+}
+
+button.loading {
+  background-image: url('../../assets/images/loader-white.svg');
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+@media only screen and (max-width : 894px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
+#nav > div > a:not(.mobile-hide) {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-msg {
+  color: #d53b39;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.required {
+  color: #d53b39;
+  font-weight: bold;
+  margin-left: 2px;
+  vertical-align: text-top;
+  font-size: 12px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Groupie">
+    <meta name="application-name" content="Groupie"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-128.png" sizes="128x128" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="application-name" content="Groupie"/>
+    <meta name="msapplication-TileColor" content="assets/favicon/#FFFFFF" />
+    <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="assets/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="assets/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="assets/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="assets/favicon/mstile-310x310.png" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!--STYLING-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pages/proposalResponse.css">
+    <!--SCRIPTS-->
+    <script src="js/auth/mustBeLoggedIn.js"></script>
+    <script src="js/base.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <title>Groupie - Proposal Response</title>
+</head>
+<body>
+<!--CONTENT-->
+<header>
+    <div id="nav">
+        <div>
+            <h1>
+                <a href="">
+                    <img src="assets/logo/logo-192.png" width="32" height="32">
+                    groupie
+                </a>
+            </h1>
+        </div>
+        <a id="profile" onclick="account()">Profile</a>
+        <a id="pendinginvites" onclick="pendingInvites()">Pending Invites</a>
+        <a id="proposalresponse" onclick="proposalResponse()">Proposal Response</a>
+        <a id="sentproposals" onclick="sentProposals()">Sent Proposals</a>
+        <a id="calendar" onclick="calendar()">Calendar</a>
+        <a onclick="logout()">Log Out</a>
+        </div>
+    </div>
+</header>
+<div class="main">
+
+
+    <div class="prop">
+        <ul class="list-group prop-list">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        Proposal 1
+                </div>
+                    <div class="col-3">
+                        <input type="radio" class="btn-check" name="yes-no" id="yes1" autocomplete="off">
+                    </div>
+                    <div class="col-2">
+                        <p>Yes</p>
+<!--                        <label class="btn btn-outline-success" name="yes-no" for="yes1">Yes</label>-->
+                    </div>
+                    <div class="col-3">
+                    <input type="radio" class="btn-check" name="yes-no" id="no1" autocomplete="off">
+                </div>
+                    <div class="col-2">
+                        <p>No</p>
+<!--                        <label class="btn btn-outline-success" name="yes-no" for="no1">No</label>-->
+                    </div>
+
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">
+                        Proposal 2
+                    </div>
+                    <div class="col-3">
+                        <input type="radio" class="btn-check" name="yes-no2" id="yes2" autocomplete="off">
+                    </div>
+                    <div class="col-2">
+                        <p>Yes</p>
+<!--                        <label class="btn btn-outline-success" name="yes-no2" for="yes2">Yes</label>-->
+                    </div>
+                    <div class="col-3">
+                        <input type="radio" class="btn-check" name="yes-no2" id="no2" autocomplete="off">
+                    </div>
+                    <div class="col-2">
+                        <p>No</p>
+<!--                        <label class="btn btn-outline-success" name="yes-no2" for="no2">No</label>-->
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <button id="send-button">Send</button>
+    <button id="save-button">Save Draft</button>
+    <button onclick="back()">Back</button>
+</div>
+<footer>
+    <p>&copy; Group 47</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/postload/pages/proposalResponse.js"></script>
+</body>
+</html>

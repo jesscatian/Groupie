@@ -1,0 +1,31 @@
+#nav > div > a:not(.mobile-hide) {
+  display: inline-block;
+}
+
+.main {
+  box-sizing: border-box;
+  left: 0px;
+  margin-top: 96px;
+  width: 100vw;
+  min-height: calc(100vh - 192px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(50vh - 384px);
+  flex-direction: column;
+}
+
+.main > h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*.list-group
+{
+    width: 900px;
+}*/
+
+footer {
+  position: relative;
+}

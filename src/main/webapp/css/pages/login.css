@@ -1,0 +1,63 @@
+html, body {
+  overflow-y: hidden;
+}
+
+div.login {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+div.login > h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+div.login > a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+  margin: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: opacity ease 0.2s;
+}
+
+div.login > a:hover {
+  opacity: 1;
+}
+
+/* div.login > button {*/
+.on-enter-target {
+   background: black;
+   background-color: black;
+   box-sizing: border-box;
+   font-size: 18px;
+   line-height: 18px;
+   font-weight: 500;
+   text-decoration: none;
+   color: white;
+   padding: 15px 24px;
+   height: 48px;
+   flex-shrink: 0;
+   border-radius: 100px;
+   margin: 0px 8px;
+   cursor: pointer;
+   border: none;
+   font-family: "IBM Plex Sans", sans-serif;
+   outline: none;
+   margin-top: 24px;
+}
+
+@media only screen and (max-width : 894px) {
+  div.login > input {
+    width: 320px;
+  }
+  #nav > div > a:not(.mobile-hide) {
+    display: block;
+  }
+}
